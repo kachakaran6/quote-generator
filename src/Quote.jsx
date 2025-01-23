@@ -7,8 +7,8 @@ const Quote = () => {
 
     const getQuote = async () => {
         try {
-            const response = await fetch("https://quotes.rest/");
-            // https://api.quotable.io/random
+            const response = await fetch("https://api.quotable.io/random");
+            // 
             const data = await response.json();
 
             const { content, author } = data;
